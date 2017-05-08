@@ -4,47 +4,41 @@
     <title>Guessing Game</title>
 
     <!-- Bootstrap and CSS here-->
-    <style>
-      .center {
-        text-align: center;
-      }
-      ul {
-          list-style: none;
-          padding: 0;
-      }
-      img {
-          display: inline;
-          width: 200px;
-          height: 100px;
-      }
-      #footer {
-          width: 100%;
-          border-top: solid 2px black;
-          background-color: white;
-          position: fixed;
-          bottom: 0;
-      }
-    </style>
+    <style rel="stylesheet" type="text/css" source="style.css"></style>
 
   </head>
   <body>
 
-      <div id='app'>
+      <div id='app' class="center">
 
         <div id='headers'>
-          <!-- Title and subtitles! -->
+          <h1>Play the Guessing Game!</h1>
+          <h4>Guess a number between 1-100!</h4>
         </div>
 
         <div id='main'>
           <div id='input-parent'>
+            <form>
+              <input type="text" name="playerGuess" value="Take a gander" maxlength="3" autofocus />
+              <br>
+              <input type="submit" name="Guess!">
+            </form>
             <!-- Player's guess input, and submit button -->
           </div>
 
           <div id='guesses'>
+            <h4>Numbers guessed</h4>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <!-- unordered list of guesses -->
           </div>
 
           <div id="menu-btns">
+            <button type="button" name="hint">hint</button>
+            <button type="reset" name="reset">reset</button>
             <!-- reset and hint buttons -->
           </div>
         </div>
@@ -59,7 +53,7 @@
           </div>
 
           <div class=''>
-            <h4>Project by YOUR NAME HERE</h4>
+            <h4>Project by Sulamita Morales</h4>
           </div>
 
           <div class=''>
