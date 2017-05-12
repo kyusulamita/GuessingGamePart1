@@ -4,41 +4,39 @@
     <title>Guessing Game</title>
 
     <!-- Bootstrap and CSS here-->
-    <style rel="stylesheet" type="text/css" source="style.css"></style>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
 
-      <div id='app' class="center">
+      <div id='app' class ='center container'>
 
-        <div id='headers'>
+        <div id='headers' class="center">
           <h1>Play the Guessing Game!</h1>
           <h4>Guess a number between 1-100!</h4>
         </div>
 
         <div id='main'>
           <div id='input-parent'>
-            <form>
-              <input type="text" name="playerGuess" value="Take a gander" maxlength="3" autofocus />
-              <br>
-              <input type="submit" name="Guess!">
-            </form>
+              <input type="text" name="playerGuess" maxlength="3" autofocus id="player-input"/>  
+              <button type="submit" id="submit">Guess!</button>
             <!-- Player's guess input, and submit button -->
           </div>
 
           <div id='guesses'>
             <h4>Numbers guessed</h4>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li id="guess">-</li>
+              <li id="guess">-</li>
+              <li id="guess">-</li>
+              <li id="guess">-</li>
             </ul>
             <!-- unordered list of guesses -->
           </div>
 
           <div id="menu-btns">
-            <button type="button" name="hint">hint</button>
-            <button type="reset" name="reset">reset</button>
+            <button type="button" class="btn btn-primary btn-sm" name="hint">hint</button>
+            <button type="reset" class="btn btn-danger btn-sm" name="reset">reset</button>
             <!-- reset and hint buttons -->
           </div>
         </div>
@@ -46,17 +44,17 @@
 
 
 
-    <div id='footer'>
+    <div id='footer' class='center'>
         <div>
-          <div class=''>
+          <div class='col-sm-4'>
             <img src='fa-logo@2x.png'></img>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <h4>Project by Sulamita Morales</h4>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <img src='grace_hopper_academy.png'></img>
           </div>
 
